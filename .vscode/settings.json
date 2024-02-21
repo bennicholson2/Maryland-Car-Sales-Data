@@ -10,7 +10,7 @@
             "port": 3306,
             "driver": "MySQL",
             "name": "maryland database",
-            "database": "maryland_economics_database",
+            "database": "maryland_project_database",
             "username": "root",
             "askForPassword": true
         }
