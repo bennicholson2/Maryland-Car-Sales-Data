@@ -1,14 +1,8 @@
-library(readr)
+total_car_sales <- cars_sold_economic_socioeconomic_data
+value_total_car_sales <- value_cars_sold_economic_socioeconomic_data
 
-# Load CSV file into a data frame
-data <- read_csv("raw_datasets/MVA_Car_Sales.csv")
+total_car_sales$maryland_population <- as.integer(as.character(total_car_sales$maryland_population))
+total_car_sales$total_workforce <- as.integer(as.character(total_car_sales$total_workforce))
 
-plot(data)
-
-time_series_1 <- ts(data, frequency = 12, start = c(2002, 1))
-time_series_1
-
-time_series_2 <- ts(data, frequency = 12, start=c(2002,1))
-time_series_2
-
-time_series_1_decompose <- decompose(time_series_1)
+value_total_car_sales$maryland_population <- as.integer(as.character(value_total_car_sales$maryland_population))
+value_total_car_sales$total_workforce <- as.integer(as.character(value_total_car_sales$total_workforce))
