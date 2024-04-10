@@ -27,14 +27,8 @@ CREATE TABLE yearly_economic_data
   inflation_rate_cpi FLOAT NOT NULL,
   average_weekly_wage INT NOT NULL,
   total_wages_thousands BIGINT NOT NULL,
-  year DATE,
-  FOREIGN KEY (year) REFERENCES yearly_car_sales(year)
-);
-
-CREATE TABLE socioeconomic_data
-(
-  maryland_population BIGINT NOT NULL,
-  total_workforce BIGINT NOT NULL,
+  maryland_population BIGINT,
+  total_workforce BIGINT,
   year DATE,
   FOREIGN KEY (year) REFERENCES yearly_car_sales(year)
 );
